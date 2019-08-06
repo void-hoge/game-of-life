@@ -36,7 +36,7 @@ int main(int argc, char const *argv[]) {
     // bd.set_random();
 
     std::chrono::milliseconds wait(100);
-    for (size_t i = 0; i <= 128; i++) {
+    for (size_t i = 0; i <= (1<<10); i++) {
         std::cout << "generation: " << i << '\n';
         bd.cui_output();
         bd.update_all();
